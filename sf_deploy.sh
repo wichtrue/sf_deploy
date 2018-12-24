@@ -16,14 +16,14 @@ scp -pr  /tmp/nlu.tgz root@172.30.149.188:/opt/.
 
 rm -rvf /tmp/nlu.tgz
 
-ssh root@172.30.149.188 mv -v /opt/nlu_platform/ /opt/nlu_platform_$DATE
+#ssh root@172.30.149.188 mv -v /opt/nlu_platform/ /opt/nlu_platform_$DATE
 
-ssh root@172.30.149.188 tar xzf /opt/nlu.tgz 
+#ssh root@172.30.149.188 tar xzf /opt/nlu.tgz 
 
-ssh root@172.30.149.188 rm -rvf /opt/nlu.tgz
+#ssh root@172.30.149.188 rm -rvf /opt/nlu.tgz
 
-ssh root@172.30.149.188 systemctl restart nlu
+#ssh root@172.30.149.188 systemctl restart nlu
 
-ssh root@172.30.149.188 systemctl restart nginx 
+#ssh root@172.30.149.188 systemctl restart nginx 
 
 eval `ssh-agent -k`
