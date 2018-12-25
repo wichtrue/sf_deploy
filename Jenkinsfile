@@ -1,5 +1,5 @@
 node{
-    stage('Git checkout'){
+    stage('Git Pull'){
         sh "ssh root@192.168.1.26 git --git-dir=/opt/nlu_platform/.git pull"
     }
     stage('Deploy to Production'){
